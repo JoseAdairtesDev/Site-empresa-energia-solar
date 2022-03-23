@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produz Quality</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+  ></script>
+  
+  <style>
+  
+    /* Style the navbar */
+    #navbar {
+      overflow: hidden;
+      z-index:1;
+
+      
+    }
+
+    /* Navbar links */
+    #navbar a {
+      float: left;
+      display: block;
+
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+
+    /* Page content */
+    .content {
+      padding: 16px;
+    }
+
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 60px;
+    }    
+              
+       
+    #container img{
+
+      height: 200px;
+      width: 200px;
+      }
+    
+    #card1 h5{
+      text-align: center;
+    }     
+
+    #card2 img{
+
+      height: 80px;
+      width: 80px;
+
+    }
+
+
+    #card2{
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #card2 h5{
+      text-align: center;
+    }
+
+    #card2 p{
+      text-align: center;
+    }
+   
+   #card3{
+     align-items: center;
+     text-align: center;
+
+   }
+  
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+}
+
+body > #div {
+	font-family: "Inter", sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	font-size: 1.25rem;
+}
+
+*:focus {
+	outline: none;
+}
+
+ body > #div {
+	width: 90%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+details div {
+	border-left: 2px solid #1E90FF;
+	border-right: 2px solid #1E90FF;
+	border-bottom: 2px solid #1E90FF;
+	padding: 1.5em;
+}
+
+details div > * + * {
+	margin-top: 1.5em;
+}
+
+details + details {
+	margin-top: .5rem;
+}
+
+summary {
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary {
+	border: 2px solid #1E90FF;
+	padding: .75em 1em;
+	cursor: pointer;
+	position: relative;
+	padding-left: calc(1.75rem + .75rem + .75rem);
+}
+
+summary:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "↓";
+	width: 1.75rem;
+	height: 1.75rem;
+	background-color: #1E90FF;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+details[open] summary {
+	background-color: #eee;
+}
+
+details[open] summary:before {
+	content: "↑";
+}
+
+summary:hover {
+	background-color: #eee;
+}
+
+#div a {
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 1px 0 0;
+}
+
+a:hover {
+	box-shadow: 0 3px 0 0;
+}
+
+#div code {
+	font-family: monospace;
+	font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  
+  #home{
+    padding-bottom: 50px;
+  }
+        
+      }
+
+    
+</style>
+
+</head>
+<body>
+ 
+ <header>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      
+    <!-- Brand -->
+    <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#carouselExampleControls">
+      <img
+        src="imges/logo.png"
+        height="80"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: 2px;"
+      />
+    </a>
+     
+       
+ <!-- Toggle button -->
+  <button
+  class="navbar-toggler"
+  type="button"
+  data-mdb-toggle="collapse"
+  data-mdb-target="#navbarRightAlignExample"
+  aria-controls="navbarRightAlignExample"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <i class="fas fa-bars"></i>
+</button>
+
+<!-- Collapsible wrapper -->
+<div class="collapse navbar-collapse" id="navbarRightAlignExample">
+  <!-- Left links -->
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#carouselExampleControls">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#serviços">Serviços</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#projetos">Projetos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#perguntas">Perguntas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contato">Contato</a>
+    </li>
+    
+  </ul>
+  <!-- Left links -->
+  </div>
+<!-- Collapsible wrapper -->
+     
+  </div>
+    <!-- Container wrapper -->
+ </nav>   
+
+
+ </header>
+
+  <header>
+    <!-- Intro settings -->
+    <style>
+      /* Default height for small devices */
+      #intro-example {
+        height: 400px;
+      }
+  
+      /* Height for devices larger than 992px */
+      @media (min-width: 992px) {
+        #intro-example {
+          height: 600px;
+        }
+        
+      }
+    </style>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 80px;">
+      <!-- Container wrapper -->
+      
+        
+      
+       
+    </nav> 
+   
+    <!-- Background image -->
+    
+    <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+      <div class="carousel-inner">
+     <div class="carousel-item active">
+      <div
+        id="intro-example"
+        class="p-5 text-center bg-image"
+        style="background-image: url('https://www.enersolar.eng.br/wp-content/uploads/2019/03/energia-solar-1030x601.jpg');"
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Produz Quality Engenharia</h1>
+              <h5 class="mb-4">Economize em até 99% de energia sem burocracia, o trabalho é nosso o benefício é seu</h5>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="formulario.html"
+                role="button"
+                rel="nofollow"                   
+                >Solicite um Orçamento</a
+              >
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div
+          id="intro-example"
+          class="p-5 text-center bg-image"
+          style="background-image: url('https://www.aldo.com.br/blog/wp-content/uploads/2020/12/blog_aldosolar_-Saiba-quanto-custa-a-energia-solar-e-suas-vantagens-1024x587.jpg');"
+        >
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                <h1 class="mb-3">Produz Quality Engenharia</h1>
+                <h5 class="mb-4">Não desperdice  o seu dinheiro com faturas de energia</h5>
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  href="formulario.html"
+                  role="button"
+                  rel="nofollow"
+                  >Solicite um Orçamento</a
+                >
+            
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div
+            id="intro-example"
+            class="p-5 text-center bg-image"
+            style="background-image: url('https://s2.glbimg.com/MntW5m0AZl9LVFYxBhMFt3jWfzI=/0x0:1000x669/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/D/y/vhxFoASiG5TI7MSTsvYQ/foto-1.jpg');"
+          >
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                  <h1 class="mb-3">Produz Quality Engenharia</h1>
+                  <h5 class="mb-4">Economize em até 99% de energia sem burocracia, o trabalho é nosso o benefício é seu</h5>
+                  <a
+                    class="btn btn-outline-light btn-lg m-2"
+                    href="formulario.html"
+                    role="button"
+                    rel="nofollow"
+                   >Solicite um Orçamento</a
+                  >
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>   
+    
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+     </div>
+      <!-- Background image -->
+    
+  </header>
+  <br/> <br/>
+ 
+  
+  <div class="container" id="home">
+    
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid" style="align-items: center; justify-content: center; display: flex; color: #FFF;">
+        <figure class="text-center" id="vantagens">
+          <blockquote class="blockquote">
+            <h1 class="mt-3">Não desperdice dinheiro</h1>
+          </blockquote>
+          <figcaption class="blockquote-footer" style="color: #FFF;">
+            Economia e Qualidade em seu projeto de  <cite title="Source Title">energia solar</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </nav>
+    
+   
+  
+  <div class="clearfix">
+    <img src="imges/economi.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." height="500" width="100%">
+    
+    <br/> <br/>
+    
+    <p>
+      Realizamos sonhos, sim, o sonho de poder adquirir um aparelho de ar condicionado, ligar um forno, tomar um banho tranquilo, sem se preocupar com a conta de energia no final do mês, oferecemos este conforto para o seu lar, para sua família. Para você que tem um comércio realizamos o sonho de poder alavancar seus negócios sem precisar aumentar os seus custo com a fatura de energia elétrica. 
+    </p>
+  
+    <p>
+      Somos uma empresa especializada no fornecimento de sistemas solar fotovoltaicos on-grid. Trabalhamos para atender sua necessidade de forma única, com um sistema inteligente e versátil, com profissionais capacitado para garantir que você tenha uma experiência acima das suas expectativas.
+
+         
+    </p>
+  
+    <p>
+      Oferecemos 3 anos de garantia em nossos serviços de instalação para você ter a tranquilidade de saber que está bem assistido com um pós venda de qualidade. A Produz Quality Engenharia tem projetos em Minas Gerais, Acre, Maranhão, Espirito Santo, hoje não fazemos apenas clientes mas sim amigos 
+    </p>
+    
+    
+  </div>
+  </div>
+  
+ 
+  
+  <div class="container" id="container">
+   
+    <nav class="navbar navbar-dark bg-primary" id="serviços">
+      <div class="container-fluid" style="align-items: center; justify-content: center; display: flex; color: #FFF;">
+        <figure class="text-center" id="vantagens">
+          <blockquote class="blockquote">
+            <h1 class="mt-3">Serviços</h1>
+          </blockquote>
+          <figcaption class="blockquote-footer" style="color: #FFF;">
+            Conheça nossos <cite title="Source Title">serviços</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </nav>
+    <br/>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card shadow-none" id="card2">
+        <img
+          src="imges/Trabalho1.png"
+          class="card-img-top"
+          alt="construção1"
+           />
+        <div class="card-body">
+          <h5 class="card-title">Projetos Personalizados</h5>
+          <p class="card-text"> Desenvolvemos projetos de acordo com a sua necessidade, podendo ser solo, telhado, laje, estacionamento coberto. São projetos inovadores, ousados feito sob medida para você. </p>
+                        
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-none" id="card2">
+        <img
+          src="imges/Trabalho2.png"
+          class="card-img-top"
+          alt="construção2"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Projetos e Instalações de Sistemas Fotovoltaico On-Grids</h5>
+          <p class="card-text">Executamos a instalação do seu sistema solar fotovoltaico por completo, compreendendo o projeto elétrico, projeto de fixação estrutural, homologação do sistema junto à Concessionária de Energia, instalação dos painéis, garantia, manutenção e assistência pós-instalação. </p> 
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-none" id="card2">
+        <img
+          src="imges/Trabalho3.png"
+          class="card-img-top"
+          alt="construção4"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Garantia e Assistência Técnica</h5>
+          <p class="card-text">Trabalhamos com produtos de qualidade conceituado no mercado, com garantia de fábrica e as certificações necessárias para o produto. Também prestamos assistência técnica e manutenção periodicamente  </p>
+          
+           
+        </div>
+      </div>
+    </div>
+   
+  </div>
+ </div>
+ <br/>
+ 
+<div class="container" id="projetos">
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid" style="align-items: center; justify-content: center; display: flex; color: #FFF;">
+      <figure class="text-center" id="vantagens">
+        <blockquote class="blockquote">
+          <h1 class="mt-3">Projetos e Instalações</h1>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: #FFF;">
+          Conheça nossos últimos <cite title="Source Title">projetos</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </nav>
+  <br/>
+ <!-- Carousel wrapper -->
+<div
+id="carouselMultiItemExample"
+class="carousel slide carousel-dark text-center"
+data-mdb-ride="carousel"
+>
+<!-- Controls -->
+<div class="d-flex justify-content-center mb-4">
+  <button
+    class="carousel-control-prev position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Inner -->
+<div class="carousel-inner py-4">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="imges/Bairro Santa Monica/Bairro Santa Monica 2.jpg"
+              class="card-img-top"
+              alt="Bairro Santa Monica"
+              height="200"
+              />
+            <div class="card-body">
+              <h5 class="card-title">Bairro Santa Mônica</h5>
+              <p class="card-text">Economia de  R$ 480,00</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              confira
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="lightbox">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Bairro Santa Monica/Bairro Santa Monica 1.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                            alt="Bairro Santa Mônica1"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                             height="500"
+                            />
+                          <img
+                            src="imges/Bairro Santa Monica/Bairro Santa Monica 2.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                            alt="Bairro Santa Mônica2"
+                            class="w-100 shadow-1-strong rounded"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Bairro Santa Monica/Bairro Santa Monica 3.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                            alt="Bairro Santa Mônica3"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                          src="imges/Bairro Santa Monica/Bairro Santa Monica 4.jpg"
+                          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                          alt="Bairro Santa Mônica4"
+                          class="w-100 shadow-1-strong rounded"
+                        />
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card w-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Bairro Santa Mônica _ Belo Horizonte MG - Economia de  R$ 480,00</h5>
+                      
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="modal-footer">     
+                                       
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div> <!--end modal-->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="imges/Bairro Ype/Bairro Ype 3.jpg"
+              class="card-img-top"
+              alt="Bairro Ype"
+              height="200"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bairro Ype</h5>
+              <p class="card-text">Economia de R$ 650,00</p>
+             <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              confira
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                   
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="lightbox">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Bairro Ype/Bairro Ype 1.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                            alt="Bairro Ype1"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                             height="600px"
+                            />
+                         
+                        </div>
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Bairro Ype/Bairro Ype 3.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                            alt="Bairro Ype3"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                          src="imges/Bairro Ype/Bairro Ype 4.jpg"
+                          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                          alt="Bairro Ype4"
+                          class="w-100 shadow-1-strong rounded"
+                        />
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card w-100">
+                    
+                    <div class="card-body">
+                      <h5 class="card-title">Bairro Ype _ cidade de Belo Horizonte  MG  _ Economia de R$ 650,00</h5>
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="modal-footer">     
+                                       
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div> <!--end modal-->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="imges/Cidade Cruzeiro do Sul/Cidade Cruzeiro do Sul 3.jpg"
+              class="card-img-top"
+              alt="Cidade Cruzeiro do Sul"
+              height="200"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cidade Cruzeiro do Sul</h5>
+              <p class="card-text">Economia de R$ 13.000,00</p>
+             <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              confira
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="lightbox">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Cidade Cruzeiro do Sul/Cidade Cruzeiro do Sul 1.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                            alt="Cidade Cruzeiro do Sul1"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                            src="imges/Cidade Cruzeiro do Sul/Cidade Cruzeiro do Sul 2.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                            alt="Cidade Cruzeiro do Sul2"
+                            class="w-100 shadow-1-strong rounded"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Cidade Cruzeiro do Sul/Cidade Cruzeiro do Sul 3.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                            alt="Cidade Cruzeiro do Sul3"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                          src="imges/Cidade Cruzeiro do Sul/Cidade Cruzeiro do Sul 4.jpg"
+                          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                          alt="Cidade Cruzeiro do Sul4"
+                          class="w-100 shadow-1-strong rounded"
+                        />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card w-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Cidade: Cruzeiro do Sul Acre Economia de R$ 13.000,00</h5>
+                     
+                    </div>
+                  </div>
+                  
+                  <div class="modal-footer">     
+                                       
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div> <!--end modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
+            <img
+              src="imges/Cidade de Esmeraldas/Cidade de Esmeraldas 3.jpg"
+              class="card-img-top"
+              alt="Cidade de Esmeraldas"
+              height="200"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cidade de Esmeraldas</h5>
+              <p class="card-text">Economia de R$ 1.200,00</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+              confira
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="lightbox">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Cidade de Esmeraldas/Cidade de Esmeraldas 1.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                            alt="Cidade de Esmeraldas1"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                            src="imges/Cidade de Esmeraldas/Cidade de Esmeraldas 2.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                            alt="Cidade de Esmeraldas2"
+                            class="w-100 shadow-1-strong rounded"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Cidade de Esmeraldas/Cidade de Esmeraldas 3.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                            alt="Cidade de Esmeraldas3"
+                            class="w-100 shadow-1-strong rounded"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card w-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Cidade de Esmeraldas - MG - Economia de R$ 1.200,00</h5>
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="modal-footer">     
+                                       
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div> <!--end modal-->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="imges/Cidade de Felixlandia/Cidade de Felixlandia 3.jpg"
+              class="card-img-top"
+              alt="homologação"
+              height="200"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cidade de Felixlandia</h5>
+              <p class="card-text">Economia de R$ 12500,00</p>
+               <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+              confira
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="lightbox">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Cidade de Felixlandia/Cidade de Felixlandia 1.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                            alt="cidade de Felixlandia1"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                            src="imges/Cidade de Felixlandia/Cidade de Felixlandia 2.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                            alt="cidade de Felixlandia2"
+                            class="w-100 shadow-1-strong rounded"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Cidade de Felixlandia/Cidade de Felixlandia 3.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                            alt="cidade de Felixlandia3"
+                            class="w-100 shadow-1-strong rounded"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card w-100">
+                    <div class="card-body">
+                   
+                      <h5 class="card-title">Cidade de Felixlandia MG_ Economia de R$ 12500,00</h5> 
+                    
+                    </div>
+                  </div>
+                  
+                  <div class="modal-footer">     
+                                       
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div> <!--end modal-->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              src="imges/Mercearia Coqueiros/Mercearia Coqueiros 3.jpg"
+              class="card-img-top"
+              alt="Mercearia Coqueiros"
+              height="200"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mercearia Coqueiros</h5>
+             <p class="card-text">Economia de R$ 2.500,00</p>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+              confira
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="lightbox">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Mercearia Coqueiros/Mercearia Coqueiros 1.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                            alt="Mercearia Coqueiros1"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                            src="imges/Mercearia Coqueiros/Mercearia Coqueiros 2.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                            alt="Mercearia Coqueiros2"                            
+                            class="w-100 shadow-1-strong rounded"
+                            height="500"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <img
+                            src="imges/Mercearia Coqueiros/Mercearia Coqueiros 3.jpg"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                            alt="Mercearia Coqueiros3"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                          />
+                          <img
+                          src="imges/Mercearia Coqueiros/Mercearia Coqueiros 4.jpg"
+                          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                          alt="Mercearia Coqueiros4"
+                          class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                        />
+                        <img
+                        src="imges/Mercearia Coqueiros/Mercearia Coqueiros 5.jpg"
+                        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                        alt="Mercearia Coqueiros5"
+                        class="w-100 shadow-1-strong rounded"
+                      />
+
+                       
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card w-100">
+                    <div class="card-body">
+                      
+                      <h5 class="card-title">Mercearia Coqueiros - Bairro Vila dos Coqueiros- Cidade: Sabará - Economia de R$ 2.500,00</h5>
+                                        
+                    </div>
+                  </div>
+                  
+                  <div class="modal-footer">     
+                                       
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div> <!--end modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+ </div>
+<!-- Inner -->
+</div>
+<!-- Carousel wrapper --> 
+</div>
+ 
+<div class="container" id="perguntas">
+
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid" style="align-items: center; justify-content: center; display: flex; color: #FFF;">
+      <figure class="text-center" id="vantagens">
+        <blockquote class="blockquote">
+          <h1 class="mt-3">Perguntas frequentes</h1>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: #FFF;">
+          Conheça algumas<cite title="Source Title">perguntas frequentes</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </nav>
+  <br/>
+ 
+  <div id="div">
+    <details open>
+      <summary>
+        Como é o funcionamento do efeito fotovoltaico?
+      </summary>
+      <div>
+        O funcionamento da energia solar fotovoltaica é baseada no fenômeno que ocorre quando partículas de luz solar ( fótos ) Colidem com os átomos de silicio presentes no painel solar, gerando um deslocamento dos elétrons, que criam uma corrente elétrica contínua, chamada de energia solar fotovoltaica.
+      </div>
+    </details>
+    <details>
+      <summary>
+        Como funciona a energia solar fotovoltaica?
+      </summary>
+      <div>
+        <p>        
+        O esquema de funcionamento do sistema de geração de energia elétrica solar fotovoltaica baseia-se na utilização de painéis solares que captam a luz e, por meio do efeito fotovoltaico, geram energia elétrica, que convertida pelo inversor solar, de corrente contínua para alternada, e, então, a eletricidade é distribuída. 
+        </p>       
+        <p>
+        Existem três formas de funcionamento de um sistema de energia solar fotovoltaica, que varia pelo tipo de sistema instalado: 
+        </p>
+        <p>
+       . Sistema de energia solar conectado a rede (on-grid );
+        </p>
+        <p>
+       . Sistema fotovoltaico isolado ou autônomo (off-grid);
+        </p>
+        <p>
+       . Sistema de energia solar híbrido.
+        </p>
+        <p>
+       Podemos diferenciar o funcionamento de sistemas fotovoltaicos a partir do seu modo de operação, já que o sistema on- grid atua com a inserção de energia diretamente na rede elétrica, enquanto o sistema off- grid funciona por meio de bateria que armazenam eletricidade. Já o sistema híbrido tem sua operação de modo simultâneo, entre on- grid e off-grid, fazendo com que seu trabalho ocorra conectado a rede, enquanto o banco de bateria está carregando, e vice- versa.
+       </p>
+      </div>
+    </details>
+    <details>
+      <summary>
+        Como funciona o sistema fotovoltaico conectado a rede?
+      </summary>
+      <div>
+        <p>Veja o esquema de funcionamento do sistema de energia solar:</p>
+        <p>1. O painel solar que gera a energia solar fotovoltaica.</p>
+        <p>2. O inversor solar converte a energia solar para sua casa ou empresa.</p>
+        <p>3. A energia solar é distribuída para sua casa ou empresa.</p>
+        <p>4. A energia solar é usada por utensílios e equipamentos elétricos.</p>
+        <p>5. O excesso de energia vai para a rede de distribuidora gerando crédito.</p>
+
+      </div>
+    </details>
+    <details>
+      <summary>
+        O que é o sistema solar off- grid? 
+      </summary>
+      <div>
+      O sistema de energia solar off- grid (sistema isolado ou sistema autônomo) tem como principal característica o " autos sustento" , ou seja, é o sistema não conectado a rede elétrica, que armazena a energia solar excedente em baterias para ser utilizada quando não houver produção.
+
+      </div>
+    </details>
+    <details>
+      <summary>
+        O sistema de energia solar faz barulho?
+      </summary>
+      <div>
+        Não, ele é super silencioso.
+      </div>
+    </details>
+     
+    <details>
+      <summary>
+        Como funciona o sistema fotovoltaico híbrido?
+      </summary>
+      <div>
+        O sistema fotovoltaico híbrido solar opera a partir da conexão com a rede, mas , também, está conectado diretamente as baterias. Sendo assim, ambos os inversores são alimentados pelo banco de armazenamento, atuando isoladamente enquanto um dos tipos de geração de energia ( on- grid e off- grid) estiver desconectado.
+    
+      </div>
+    </details>
+    
+    <details>
+      <summary>
+        Eu posso ligar somente o meu ar-condicionado ou geladeira com energia solar?
+      </summary>
+      <div>
+        O sistema de energia é, normalmente, conectado no seu quadro de luz. Desta forma a energia que os painéis produzem é usada na casa toda ( para tudo que estiver conectado na tomada de sua casa ou empresa).
+      </div>
+    </details>
+
+  </div>
+ 
+</div>
+ 
+<br/>
+ 
+<div class="container" id="contato">
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid" style="align-items: center; justify-content: center; display: flex; color: #FFF;">
+      <figure class="text-center" id="vantagens">
+        <blockquote class="blockquote">
+          <h1 class="mt-3">Contato</h1>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: #FFF;">
+          Conheça mais sobre a <cite title="Source Title">Produz Quality Eng</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </nav>
+  <br/>
+
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.4956926569344!2d-43.93286408508576!3d-19.903505786618595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a1a75638e7f%3A0xde63a367aa5424a3!2sAv.%20Cristiano%20Machado%2C%20640%20-%20Sagrada%20Fam%C3%ADlia%2C%20Belo%20Horizonte%20-%20MG%2C%2031030-514!5e0!3m2!1sen!2sbr!4v1642544187448!5m2!1sen!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+</div>
+ 
+<footer class="bg-light text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="https://www.facebook.com/profile.php?id=100076111460242"
+        role="button"
+        target="blank"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+     
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+     
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="#!">ProduzQualityEng</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+let navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+let sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/553198274234?text=Olá, gostaria de fazer um orçamento!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
